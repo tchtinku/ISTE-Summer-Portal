@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang='en'>
-
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="io-edge">
-    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="stylesheet" href="CSS/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <title>ISTE Summer School</title>
+    <title>ISTE Summer School||Profile</title>
 </head>
 
 <body>
     <nav>
         <div class="logo">
+            <img src="iste.png" style="width: 5%; height: 5%; float: left; background: #21212b;">
             <h4>ISTE Summer School</h4>
         </div>
         <ul class="nav-links">
             <li>
-                <a href="#">Domains</a>
+                <img src="d.png" style="width:16%; height:100%; display: inline-flex; background: #21212b; vertical-align: middle;">
+                <a href="#" class="options">Domains</a>
             </li>
             <li>
+                <img src="p.png" style="width:16%; height:100%; display: inline-flex; background: #21212b; vertical-align: middle;">
                 <a href="#">Profile</a>
             </li>
             <li>
+                <img src="s.png" style="width:16%; height:100%; display: inline-flex; background: #21212b; vertical-align: middle;">
                 <a href="#">Sign Out</a>
             </li>
         </ul>
@@ -35,99 +38,48 @@
     </nav>
     <div class="container">
         <div class="heading">
-            <h1>My Profile</h1>
+            <h1 style="margin-left: 7%; margin-bottom: 4%; margin-left: 15%;">My Account</h1>
+            <img src="p2.png" style="width: 15%; height: 15%; float: left; background: #21212b; margin-left: 10%;">
+            <h1 style="margin-top: 9%; margin-left: 10%;">Jane Doe</h1>
         </div>
-        <div class="row">
-            <div class="card">
+        <div class="rows">
+            <div class="card" style="margin-top: 10%; width: 80%; margin-right: auto;">
                 <div class="card-header">
-                    <div class="row">
-                        <img src="https://images.vexels.com/media/users/3/147102/isolated/preview/082213cb0f9eabb7e6715f59ef7d322a-instagram-profile-icon-by-vexels.png" alt="Girl in a jacket" width="50" height="50">
-                    <h1>Tinku Choudhary</h1>
+                    <div class="details">
+                    Display Name
+                    </div>
+                    <h2>Jane Doe
+                    <a href="#" class="btn" style="text-decoration: none; font-size: 20px; margin-left: 70%; border-radius: 5px; background-color: #181820; color: rgb(226, 226, 226); padding: 7px 8px;">Edit</a>
+                </h2>
+                </div>
+                <div class="card-header">
+                    <div class="details">
+                    Email ID
+                    </div>
+                    <h2 style="display: flex;">abc@xyz.com
+                    <a href="#" class="btn" style="text-decoration: none; font-size: 20px; margin-left: 63%; border-radius: 5px; background-color: #181820; color: rgb(226, 226, 226); padding: 7px 8px;">Edit</a>
+                </h2>
+                </div>
+                <div class="card-header">
+                    <div class="details">
+                    Password
+                    </div>
+                    <h2>********
+                    <a href="#" class="btn" style="text-decoration: none; font-size: 20px; margin-left: 70%; border-radius: 5px; background-color: #181820; color: rgb(226, 226, 226); padding: 7px 8px;">Change</a>
+                </h2>
                 </div>
             </div>
-                <!-- <div class="card-body">
-                  
-                <a href="#" class="btn">Go to tasks</a>
-                </div> -->
-
-              <div class="card-body">
-                <i class="fa fa-pen fa-xs edit"></i>
-                <table>
-                    <tbody>
-                        <!-- <tr>
-                            <td>Name</td>
-                            <td>:</td>
-                            <td>ImDezCode</td>
-                        </tr> -->
-                        <tr>
-                            <td>Email</td>
-                            <td>:</td>
-                            <td>imdezcode@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Address</td>
-                            <td>:</td>
-                            <td>Bali, Indonesia</td>
-                        </tr>
-                        <tr>
-                            <td>Hobbies</td>
-                            <td>:</td>
-                            <td>Diving, Reading Book</td>
-                        </tr>
-                        <tr>
-                            <td>Job</td>
-                            <td>:</td>
-                            <td>Web Developer</td>
-                        </tr>
-                        <tr>
-                            <td>Skill</td>
-                            <td>:</td>
-                            <td>PHP, HTML, CSS, Java</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="card" style="width: 80%; margin-right: auto;">
+                <div class="card-header">
+                    <div class="details">
+                    Domains
+                    </div>
+                    <h2 style="display: flex;">Front End Development</h2>
+                </div>
             </div>
-      
-            </div>
-           
         </div>
     </div>
 </body>
-<script>
-    const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-
-    burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
-
-
-    navLinks.forEach((link, index) => {
-        if(link.style.animation) {
-            link.style.animation='';
-        } else {
-    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-        }
-    });
-
-    burger.classList.toggle('toggle');
-    });
-}
-navSlide();
-var coll = document.getElementsByClassName("card-header");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+<script src="script.js">
 </script>
 </html>

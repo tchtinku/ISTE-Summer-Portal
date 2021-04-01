@@ -203,6 +203,11 @@ background-color: #21212b;
     background: #21212b;
 }
 
+.card-header h2{
+    margin-top: 1%;
+    background: #21212b;
+}
+
 .card-body{
     padding: 30px 20px;
     text-align: center;
@@ -241,4 +246,10 @@ background-color: #21212b;
 .cards:hover{
     transform: scale(1.05);
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.details{
+    color: dimgrey;
+    font-size: small;
+    background-color: #21212b;
 }
