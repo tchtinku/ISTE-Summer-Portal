@@ -85,7 +85,7 @@ background-color: #21212b;
         overflow-x: hidden;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: 95vh;
         top: 5vh;
