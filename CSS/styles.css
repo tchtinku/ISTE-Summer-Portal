@@ -85,7 +85,7 @@ background-color: #21212b;
         overflow-x: hidden;
     }
     .nav-links{
-        position: fixed;
+        position: absolute;
         right: 0px;
         height: 95vh;
         top: 5vh;
@@ -155,7 +155,7 @@ background-color: #21212b;
     color: rgb(226, 226, 226);
     font-family: 'Roboto', sans-serif;
     margin-bottom: 40px;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .row{
@@ -215,6 +215,7 @@ background-color: #21212b;
     background: #21212b;
     color: rgb(226, 226, 226);
     font-family: 'Roboto', sans-serif;
+    font-size: 12px;
     border-radius: 15px;
 }
 .card-header1 h1{
@@ -224,6 +225,7 @@ background-color: #21212b;
 
 .card-header1 h2{
     margin-top: 1%;
+    text-decoration: none;
     background: #21212b;
 }
 
@@ -234,7 +236,6 @@ background-color: #21212b;
 
 .card-header h2{
     margin-top: 1%;
-    background: #21212b;
 }
 
 .card-body{
@@ -281,6 +282,7 @@ background-color: #21212b;
     color: dimgrey;
     font-size: small;
     background-color: #21212b;
+
 }
 footer {
     background-color: #222;
@@ -377,3 +379,17 @@ footer a {
     margin-top: 1%;
     background: #21212b;
   }
+
+  .link{
+    width:60%;
+    background: #f3f2f0;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    display: flexbox;
+    margin-left: 6%;
+    text-align: left;
+    padding: 5px 3px;
+    color: rgb(226, 226, 226);
+    font-family: 'Roboto', sans-serif;
+}
